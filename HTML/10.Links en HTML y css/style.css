@@ -1,0 +1,41 @@
+h1{
+    color: blueviolet;
+}
+
+#link:link{
+    text-decoration: none;
+    background-color: darkslateblue;
+    border-radius: 5px;
+    padding: 5px 8px;
+}
+
+#link:visited{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/*Cuando se ubica el cursor encima del link*/
+
+#link:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: none; /*Agrega su subrayado el texto*/
+    background-color: cyan;
+    border-radius: 5px;
+    border: 10px;
+    border-color: black;
+}
+
+#link:active{
+    color: black;
+}
+
+#logo{
+    width: 100px;
+    height: 70;
+}
+
+#logo:hover{
+    width: 110px;
+    height: 80px;
+    border-radius: 5px;
+}

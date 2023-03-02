@@ -1,0 +1,44 @@
+table{
+    border: 1px solid blueviolet;
+    /*border-collapse: collapse;*/  /*Tabla normal*/
+    border-spacing: 10px;
+    width: 100%;
+}
+
+caption{
+    color: darkblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    line-height: 90px;
+}
+
+th{
+    border: 2.5px solid black;
+    padding: 15px;
+    color: cyan;
+    background-color: #1d3557;
+}
+
+td{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.tabla_2{
+    width: 50%;
+    background-color: cyan;
+}
+
+hr{
+    border: 10px solid black; 
+}
+
+/*Renglones pares*/
+tr:nth-child(even){     /*even = par ; odd = inpar*/
+    background-color: #cbd7c7;
+}
+
+/*Rebglones inpares*/
+tr:nth-child(odd){     /*even = par ; odd = inpar*/
+    background-color: #a8addc;
+}

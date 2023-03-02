@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="titulo">TITULO DE ESTA PAGINA</h1> <br>
+    NOMBRE: <input type="text" id="nombre">
+    <br> <br>
+    APELLIDO: <input type="text" id="apellido">
+    <script>
+
+        document.getElementById("nombre").addEventListener("focus", (evento) => {
+            evento.target.style.background = "orange";
+        });
+        document.getElementById("nombre").addEventListener("blur", (evento) =>{
+            evento.target.style.background = "cyan";
+        });
+
+        document.getElementById("apellido").addEventListener("focus", cambiar);
+        document.getElementById("apellido").addEventListener("blur", regresar);
+
+        //el parametro evento, es el evento onfocus
+        function cambiar(evento){
+
+            //A traves de target accedemos al elemento input del evento focus.
+            //evento.target = todo el elemento input.
+            
+            let componente =  evento.target;
+            componente.style.background = "green";
+        }
+
+        function regresar(evento){
+            let componente =  evento.target;
+            componente.style.background = "white";
+        }
+    </script>
+</body>
+</html>

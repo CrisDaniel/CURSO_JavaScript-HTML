@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="titulo">TITULO DE ESTA PAGINA</h1> <br>
+    NOMBRE: <input type="text" onfocus="cambiarColor(this)" onblur="regresarColor(this)">
+    <br> <br>
+    APELLIDO: <input type="text" onfocus="cambiarColor(this)" onblur="regresarColor(this)">
+    <script>
+
+        //Cambia el color del fondo del elemento input.
+        function cambiarColor(elementoInput){
+            elementoInput.style.background = "yellow"
+        }
+
+        function regresarColor(elementoInput){
+            elementoInput.style.background = "white";
+        }
+    </script>
+</body>
+</html>

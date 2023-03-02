@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="titulo" onmousedown="rojo(this)" onmouseup="azul(this)" onclick="verde(this)">TITULO DE ESTA PAGINA</h1> <br>
+
+    <script>
+        //Cuando se mantiene en click se vuelve rojo-->
+        function rojo(titulo){
+            titulo.style.color = "red";
+        }
+
+        //Cuando se suelta el click se vuelve azul. Pero existe el evento onclick asi que el evento es muy rapido que no se observa-->
+        function azul(titulo){
+            titulo.style.color = "blue";
+        }
+
+        //Con el click se vuelve verde.
+        function verde(titulo){
+            titulo.style.color = "green";
+        }
+    </script>
+</body>
+</html>

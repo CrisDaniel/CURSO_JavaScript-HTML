@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJEMPLO DOM HTML</title>
+</head>
+
+<body>
+    <h1 id="Titulo">DOM HTML</h1>
+    <p id="Parrafo">Accediendo al texto desde su id.</p>
+    <p id="Parrafo2">Todo elemento html es un objeto en JavaScript</p>
+
+    <script>
+        let parrafos = document.getElementsByTagName("p");
+        console.log(parrafos);
+
+        for (let parrafo = 0; parrafo < parrafos.length; parrafo++) {
+            console.log(parrafos[parrafo].innerHTML);
+        }
+
+    </script>
+</body>
+
+</html>

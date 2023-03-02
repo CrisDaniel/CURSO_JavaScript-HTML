@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJEMPLO DOM HTML</title>
+</head>
+
+<body>
+    <h1 id="colorAzul">DOM HTML</h1>
+    <p id="colorAzul">Accediendo al texto desde su id.</p>
+    <p id="colorAzul">Todo elemento html es un objeto en JavaScript</p>
+    <br>
+    <button id="mostrar" onclick="cambiarColor()" >Mostrar</button>
+    <br>
+    <script>
+        function cambiarColor(){
+            document.getElementById("colorAzul").style.color = "blue";
+        }
+    </script>
+</body>
+
+</html>

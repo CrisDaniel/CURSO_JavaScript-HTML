@@ -1,0 +1,59 @@
+html{
+    height: 100%;
+}
+
+body{
+    background: linear-gradient(rgb(0, 0, 0), rgb(38, 18, 67));
+}
+
+header{
+    color: blue;
+    font-size: 30px;
+    text-align: center;
+}
+
+nav{
+    width: 20%;
+    float: left;
+}
+
+nav a{
+    background-color: #f71570;
+    border-radius: 10px 0 10px 0;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    display: block;
+}
+
+section{
+    float: right;
+    width: 75%;
+    color: #7209b7;
+    border-radius: 5px;
+    box-shadow: 1px 0 4px rgba(255, 255, 255, 0.2);
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+aside{
+    float: right;
+    width: 30%;
+    padding: 5px;
+    margin: 5px;
+    font-style: italic;
+    color: #3461ee;
+    box-shadow: inset 5px 0 5px -5px #4895ef;
+    border-radius: 3px;
+}
+
+footer{
+    clear: both;
+    padding: 1px;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+}

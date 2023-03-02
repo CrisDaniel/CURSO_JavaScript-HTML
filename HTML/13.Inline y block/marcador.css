@@ -1,0 +1,37 @@
+h1{
+    color: chocolate;
+    text-align: center;
+    border: 5px solid cyan;
+    padding: 20px;
+    margin: 50px 200px;
+}
+
+h3{
+    color: rgb(255, 255, 255);
+    background-color: #864cbd;
+    text-align: center;
+    padding: 30px;
+    margin: 30px 500px;
+    border-radius: 10px;
+}
+
+p{
+    margin: 40px 150px;
+    background-color: rgba(0, 255, 255, 0.212);
+    border-radius: 20px;
+    padding: 50px;
+}
+
+#link{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    background-color: blueviolet;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+}
+
+#link:hover{
+    background-color: darkblue;
+}

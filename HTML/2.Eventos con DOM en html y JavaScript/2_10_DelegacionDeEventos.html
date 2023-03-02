@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="titulo">TITULO DE ESTA PAGINA</h1> <br>
+
+    <form id="formulario">
+        NOMBRE: <input type="text" id="nombre">
+        <br> <br>
+        APELLIDO: <input type="text" id="apellido">
+    </form>
+        
+    <script>
+        let formu = document.getElementById("formulario");
+
+        formu.addEventListener("focus", (evento) => {
+            evento.target.style.background = "orange";
+        }, true);
+
+        //El tercer parametro "true" sirve para que se aplique los cambios al input
+        //que esta dentro del formulario.
+
+        formu.addEventListener("blur", (evento) =>{
+            evento.target.style.background = "cyan";
+        }, true);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FORMULARIOS EN HTML</h1>
+    <form method="get" autocomplete="off">  <!--autocomplete: Quita el autocompletar en los input-->
+        <fieldset>  <!--fieldset: enmarca todo este form-->
+            <legend>Datos personales</legend>
+
+            <!--readonly: Evita que el input sea modificado.-->
+            <!--disable: Desabilita el input-->
+            <label for="humano">Especie: </label> <br>  
+            <input type="text" id="humano" name="humano" readonly="true" value="Humano" disabled="true"> <br>
+
+            <input type="hidden" id="sistema" name="sistema" value="HHRR">
+            
+            <!--   <form method="post"></form> Este atributo post hace que los datos envie al servidor sin mostrar los datos en la url-->
+            <!--El for en el label une al elemento input tipo text con su id=nombre, haciendo click en el label nos lleva al espacio de texto-->
+            <!--El name sirve para enviar al servidor si es que existe(*Se muestra en la url)-->
+            <!--required hace que sea obligatorio completar los campos de texto-->
+            <label for="nombre">Nombre: </label> <br>  
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre" required="true"> <br>
+    
+            <label for="apellido">Apellido: </label> <br>
+            <input type="text" id="apellido" name="apellido" placeholder="Ingrese apellido" required="true"> <br>
+    
+            <label for="email">Email: </label> <br>
+            <input type="email" id="email" name="email" placeholder="Ingrese Email"><br>
+            
+            <!--step: hace que los valores en el input tipo number acepte tambien decimales-->
+            <label for="edad">Edad: </label> <br>
+            <input type="number" id="edad" name="edad" step="any"> <br>
+    
+            <label for="password">Password: </label> <br>
+            <input type="password" id="password" name="password" required="true"> <br> <br>
+    
+            <!--Si se quiere que solamente se seleccione 1 opcion, pondremos el mismo noombre a su atributo name. En este caso el nombre es "genero"-->
+            <label>Genero: </label><br>
+            <input type="radio" id="femenino" name="genero" value="famenino">
+            <label for="femenino">Femenino</label>
+            <input type="radio" id="masculino" name="genero" value="mascuino">
+            <label for="masculino">Masculino</label><br><br>
+    
+            <label>Genero de musica:</label><br>
+            <input type="checkbox" id="clasica" name="musica">
+            <label for="clasica">Clasica</label><br>
+            <input type="checkbox" id="rap" name="musica">
+            <label for="rap">Rap</label><br>
+            <input type="checkbox" id="rock" name="musica">
+            <label for="rock">Rock</label><br><br>
+    
+            <label for="comida">Comida favorita:</label><br>
+            <select name="comida" id="comida">
+                <option value="Ceviche">Ceviche</option>
+                <option value="chaufa">Chaufa</option>
+                <option value="ajinomen" selected="true">Ajinomen</option>
+                <option value="broaster">Broaster</option>
+            </select><br><br>
+    
+            <label for="comida">Comidas favoritas:</label><br>
+            <label for="varias">*Seleccione varias si es asi.</label><br>
+            <select name="comida" id="comida" multiple="true">
+                <option value="Ceviche">Ceviche</option>
+                <option value="chaufa">Chaufa</option>
+                <option value="ajinomen" selected="true">Ajinomen</option>
+                <option value="broaster">Broaster</option>
+                <option value="pachamanca">Pachamanca</option>
+                <option value="arrozMaricos">Arroz con mariscos</option>
+            </select><br><br>
+    
+    
+            <label for="comentario">Comentario:</label><br>
+            <textarea name="comentario" id="comentario" cols="60" rows="10" placeholder="Escriba su comentario :)"></textarea><br>
+            
+            <input type="submit" value="ENVIAR validando">
+            <input type="submit" formnovalidate="formnovalidate" value="Enviar sin validar">
+        </fieldset>
+    </form>
+</body>
+</html>

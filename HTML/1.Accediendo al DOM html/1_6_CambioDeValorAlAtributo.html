@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJEMPLO DOM HTML</title>
+    <style>
+      .colorAzul {
+        color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 class="colorAzul">DOM HTML</h1>
+    <p class="colorAzul">Accediendo al texto desde su id.</p>
+    <p class="colorAzul">Todo elemento html es un objeto en JavaScript</p>
+    <br />
+    <button id="mostrar" onclick="cambiarImg()">Mostrar</button>
+    <br />
+
+    <img src="./1_6_fondo.jpg" id="imagen" />
+    <script>
+      function cambiarImg() {
+        document.getElementById("imagen").src = "1_6_img1.png";
+      }
+    </script>
+  </body>
+</html>

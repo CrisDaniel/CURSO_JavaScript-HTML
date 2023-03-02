@@ -1,0 +1,24 @@
+h1{
+    color: rgb(67, 43, 159);
+}
+
+ul{
+    list-style-type: none;
+    background-color: rgb(94, 37, 185);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    color: cyan;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: darkblue;
+}

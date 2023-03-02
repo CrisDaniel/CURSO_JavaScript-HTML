@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--El argumento (this) representa todo el elemento h1.-->
+
+    <h1 onclick="mostrarTexto(this)">TITULO DEL TEXTO</h1>
+    
+    <script>
+        <!--El para metro titulo recibe el valor h1 del argumento this-->
+        
+        function mostrarTexto(titulo){
+            titulo.innerHTML = "NUEVO TITULO";
+        }
+    </script>
+
+</body>
+</html>
